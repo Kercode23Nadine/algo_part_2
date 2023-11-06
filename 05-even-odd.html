@@ -36,8 +36,16 @@
 <script type="text/javascript">
     function evenOrOdd() {
         // AIDE : regarder du côté des modulos en javascript
-
         let number = document.getElementById("number").value;
+        if (number % 2 == 0) {
+            let message = number + " est pair"
+            alert(message)
+        }
+        else {
+            let message = number + " est impair"
+            alert(message)
+        }
+        
 
         // CODE HERE !
     }

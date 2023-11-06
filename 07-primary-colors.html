@@ -37,9 +37,17 @@
     function primaryColors() {
         let colors = document.getElementById("colors");
         let secondaryColor = colors.options[colors.selectedIndex].value;
-
-        // CODE HERE !
-    }
+    
+        if (colors.value == "purple") {
+            alert("Le violet et composé de bleu et de rouge")
+        } 
+        else if (colors.value == "green"){
+            alert("Le vert est composé de jaune et de bleu")
+        } 
+        else {
+            alert("L orange est compsé de jaune et de rouge")
+        }
+         }
 </script>
 </body>
 </html>
