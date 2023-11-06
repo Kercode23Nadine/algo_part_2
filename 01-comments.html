@@ -26,14 +26,19 @@
     </button>
 </div>
 
+<!-- Exo commentaire -->
+
 <script type="text/javascript">
     function displayMessage() {
+    // fonction qui indique un message.
         let firstname = document.getElementById("firstname").value;
         let lastname = document.getElementById("lastname").value;
+    // fonctions qui retourne le nom, prénom.
         let fullname = firstname + " " + lastname.toUpperCase();
+    // Ne pas oublier l'espace  lors de la concaténation.
         let message = "Bonjour " + fullname;
-
-        alert(message)
+    // affichage final
+        alert(message) 
     }
 </script>
 </body>
