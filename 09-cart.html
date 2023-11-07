@@ -42,8 +42,22 @@
     function cartValue() {
         let articles = document.getElementById("articles");
         let selectedArticle = articles.options[articles.selectedIndex].value;
+        // Code panier
+        let one = 30
+        let two = 50
+        let value;
 
-        // CODE HERE !
+        if (selectedArticle === "one") {
+            value = one;
+        } else if (selectedArticle === "two") {
+            value = two;
+        }
+
+        //  code promo
+        let promotion = 0.10;
+        let valuepanier = value - (value * promotion);
+
+        alert("La valeur de votre panier est de " + valuepanier + '\u20AC');
     }
 </script>
 </body>
