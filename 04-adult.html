@@ -34,12 +34,16 @@
 </div>
 
 <script type="text/javascript">
+    // Fonction pour verifier l'âge
     function verifyAge() {
+        // declare la valeur de l'âge
         let age = document.getElementById("age").value;
+        // defini la limite 18 et message alerte si > bienvenue ...
         if(age > 18)
         {
             alert("Bienvenue sur le site");   
         }
+        // sinon  le message sera Vous devez...
         else
         {
             alert("Vous devez être majeur pour accéder au site ");

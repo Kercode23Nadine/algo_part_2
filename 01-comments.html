@@ -29,15 +29,16 @@
 <!-- Exo commentaire -->
 
 <script type="text/javascript">
-    function displayMessage() {
     // fonction qui indique un message.
+    function displayMessage() {
+        // fonctions qui retourne le nom, prénom.
         let firstname = document.getElementById("firstname").value;
         let lastname = document.getElementById("lastname").value;
-    // fonctions qui retourne le nom, prénom.
+        // Ne pas oublier l'espace  lors de la concaténation.
         let fullname = firstname + " " + lastname.toUpperCase();
-    // Ne pas oublier l'espace  lors de la concaténation.
+        // affichage final
         let message = "Bonjour " + fullname;
-    // affichage final
+        // Envoie un message d'alerte
         alert(message) 
     }
 </script>

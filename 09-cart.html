@@ -37,8 +37,9 @@
 </div>
 
 <script type="text/javascript">
+    // la constante 10% ,valeur qui ne change pas
     const VALID_PROMOTION_CODE = "10POUR100";
-
+    // déclare la fonction qui va nous permettre de choisir un painer différent
     function cartValue() {
         let articles = document.getElementById("articles");
         let selectedArticle = articles.options[articles.selectedIndex].value;
@@ -58,7 +59,7 @@
         let promotion = 0.10;
         let valuepanier = value - (value * promotion);
 
-        alert("La valeur de votre panier est de " + valuepanier + '\u20AC');
+        alert("La valeur de votre panier est de " + valuepanier + '€');
     }
 </script>
 </body>
