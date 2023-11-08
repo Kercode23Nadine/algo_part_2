@@ -89,24 +89,27 @@
 
    
 
-    function isSalty() {
-       
-  
+    function isSalty() {  
 
-   
-
-
-    function isSweet() {
-        // CODE HERE !
-   
-
-    
+        let carrots=document.getElementById("carrots").checked;
+        let potatoes=document.getElementById("potatoes").checked;
+        let tomatoes=document.getElementById("tomatoes").checked;
+        return carrots || potatoes || tomatoes;
     }
 
-    
+    function isSweet() {
+        
+        let black_chocolate=document.getElementById("black-chocolate").checked;
+        let white_chocolate=document.getElementById("potatoes").checked;
+        return black_chocolate || white_chocolate;
+        
+    }
 
     function isPoisoned() {
-
+        
+        let vitriol=document.getElementById("vitriol").checked;
+        let cyanide=document.getElementById("cyanide").checked;
+        return vitriol || cyanide;
     }
         
 </script>
