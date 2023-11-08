@@ -26,13 +26,16 @@
 </div>
 
 <script type="text/javascript">
+    // CODE HERE !
+    //  fonction d'incrementation
     function incrementNumber() {
-        let number = document.getElementById("number").value;
+        // variable parseInt la bonne méthode parseFloat pour la décimale
+        let number = parseInt(document.getElementById("number").value);
+        number += 1;
+        // alert (++number); solution sans message
 
-        // alert (++ number); est une possibilité sans petit message
-
-        let message = ++number +" "+ "ceci est votre nouveau numéro chance"
-        alert(message)
+        let message = number +" "+ "ceci est votre nouveau numéro chance";
+        alert(message);
         // CODE HERE !
     }
 </script>

@@ -29,16 +29,19 @@
 <!-- Exo commentaire -->
 
 <script type="text/javascript">
+    // CODE HERE !
     // fonction qui indique un message.
     function displayMessage() {
-        // fonctions qui retourne le nom, prénom.
+        /* variable qui retourne le nom, prénom. récupere la valeur
+         de l'input text identifier par firstname*/
         let firstname = document.getElementById("firstname").value;
         let lastname = document.getElementById("lastname").value;
-        // Ne pas oublier l'espace  lors de la concaténation.
+        /* Ne pas oublier l'espace  lors de la concaténation, une méthode
+         touppercase qui appel lastname en majuscule */
         let fullname = firstname + " " + lastname.toUpperCase();
         // affichage final
         let message = "Bonjour " + fullname;
-        // Envoie un message d'alerte
+        // Envoie un message d'alerte qui récupère toute la construction en amont
         alert(message) 
     }
 </script>

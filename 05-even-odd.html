@@ -38,19 +38,15 @@
         // AIDE : regarder du côté des modulos en javascript
         //  declare la valeur du nombre
         let number = document.getElementById("number").value;
-        // vérifie si pair
-        if (number % 2 == 0) {
-            let message = number + " est pair"
-            alert(message)
-        }
-        // 
-        else {
-            // sinon impair
-            let message = number + " est impair"
-            alert(message)
-        }
+        // vérifie si pair // triple égale car valeur et type =
+        if (number % 2 === 0) {
         
-
+            alert(number + " est pair")
+        }
+        // sinon impair
+        else {
+            alert(number + " est impair")
+        }
         // CODE HERE !
     }
 </script>
