@@ -40,26 +40,27 @@
     // la constante 10% ,valeur qui ne change pas
     const VALID_PROMOTION_CODE = "10POUR100";
     // déclare la fonction qui va nous permettre de choisir un painer différent
+
     function cartValue() {
         let articles = document.getElementById("articles");
         let selectedArticle = articles.options[articles.selectedIndex].value;
+        let promo = document.getElementById ('promotion').value;
         // Code panier
         let one = 30
         let two = 50
-        let value;
 
-        if (selectedArticle === "one") {
+        if (selectedArticle === "one" && promo == VALID_PROMOTION_CODE) {
             value = one;
             
-        } else if (selectedArticle === "two") {
+        } else if (selectedArticle === "two" && promo == VALID_PROMOTION_CODE) {
             value = two;
         }
 
         //  code promo
         let promotion = 0.10;
-        let valuepanier = value - (value * promotion);
+        let valueFinal = value - (value * promotion);
 
-        alert("La valeur de votre panier est de " + valuepanier + '€');
+        alert("La valeur de votre panier est de " + valueFinal + '€');
     }
 </script>
 </body>
