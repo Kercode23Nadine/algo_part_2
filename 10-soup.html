@@ -63,32 +63,24 @@
 <script type="text/javascript">
     function doYouLikeIt() {
         // CODE HERE !
-    // Récuperer les paramètres rentrer dans chaque funtion
+    // Récuperer les paramètres rentrer dans chaque funtion avec des variables
     let salty = isSalty();
     let sweet = isSweet();
     let poisoned = isPoisoned();
-
     // Selon les éléments sélectionner le bon message apparaitra
-
         if (poisoned) {
         alert("Game over...");
         } 
-    
         else if (salty && sweet) {
         alert("Beurk... c'est pas bon !");
         } 
-    
         else if (salty) {
         alert("Hum la bonne sou-soupe salée !");
         } 
-    
         else if (sweet) {
         alert("Hum la bonne sou-soupe sucrée !");
         }
     }
-
-   
-
     function isSalty() {  
 
         let carrots=document.getElementById("carrots").checked;
@@ -100,7 +92,7 @@
     function isSweet() {
         
         let black_chocolate=document.getElementById("black-chocolate").checked;
-        let white_chocolate=document.getElementById("potatoes").checked;
+        let white_chocolate=document.getElementById("white-chocolate").checked;
         return black_chocolate || white_chocolate;
         
     }

@@ -39,7 +39,7 @@
         let colors = document.getElementById("colors");
         let secondaryColor = colors.options[colors.selectedIndex].value;
     
-        if (secondaryColor === "purple") {
+        if (secondaryColor === "purple"){
             alert("Le violet est composé de bleu et de rouge")
         } 
         else if (secondaryColor === "green"){
@@ -51,6 +51,21 @@
             alert("cette couleur n'est pas valide :/")
         }
     }
+    // méthode plus moderne :
+        /* switch (secondaryColor) {
+            case'green':
+                alert("Le vert est composé de jaune et de bleu"); 
+                break; 
+            case 'purple':
+                break;
+                alert("Le violet est composé de bleu et de rouge");
+            case 'orange' :
+                alert("Le orange est composé de jaune et de rouge");
+                break;
+            default:
+                console.log(secondaryColor + " n'est pas une couleur reconnue par ce programme");
+
+    }*/
 </script>
 </body>
 </html>
