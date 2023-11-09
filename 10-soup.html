@@ -63,23 +63,22 @@
 <script type="text/javascript">
     function doYouLikeIt() {
         // CODE HERE !
-    // Récuperer les paramètres rentrer dans chaque funtion avec des variables
-    let salty = isSalty();
-    let sweet = isSweet();
-    let poisoned = isPoisoned();
+    
     // Selon les éléments sélectionner le bon message apparaitra
-        if (poisoned) {
+    // traiter l'ordre est important, le poison en 1er
+        if (isPoisoned()) {
         alert("Game over...");
         } 
-        else if (salty && sweet) {
+        else if (isSalty && isSweet()) {
         alert("Beurk... c'est pas bon !");
         } 
-        else if (salty) {
+        else if (isSalty()) {
         alert("Hum la bonne sou-soupe salée !");
         } 
-        else if (sweet) {
+        else if (isSweet()) {
         alert("Hum la bonne sou-soupe sucrée !");
         }
+        alert ("J'ai faim")
     }
     function isSalty() {  
 
